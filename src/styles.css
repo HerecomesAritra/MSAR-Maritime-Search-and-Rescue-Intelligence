@@ -1,0 +1,446 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * MSAR — Maritime Search & Rescue Intelligence design system.
+ * Dark navy command center, cyan technical accents, red emergency,
+ * amber warning. All colors in oklch. Never hardcode colors in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  --color-abyss: var(--abyss);
+  --color-panel: var(--panel);
+  --color-cyan: var(--cyan);
+  --color-cyan-dim: var(--cyan-dim);
+  --color-emergency: var(--emergency);
+  --color-warning: var(--warning);
+  --color-success: var(--success);
+  --color-grid: var(--grid);
+
+  --font-display: "Barlow Condensed", ui-sans-serif, sans-serif;
+  --font-sans: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  --radius: 0.375rem;
+
+  --abyss: oklch(0.16 0.035 250);
+  --background: oklch(0.19 0.038 251);
+  --foreground: oklch(0.95 0.012 230);
+  --panel: oklch(0.24 0.04 253 / 55%);
+  --card: oklch(0.24 0.04 253 / 60%);
+  --card-foreground: oklch(0.95 0.012 230);
+  --popover: oklch(0.22 0.04 252);
+  --popover-foreground: oklch(0.95 0.012 230);
+
+  --cyan: oklch(0.82 0.14 199);
+  --cyan-dim: oklch(0.62 0.1 205);
+  --primary: oklch(0.82 0.14 199);
+  --primary-foreground: oklch(0.18 0.04 250);
+
+  --secondary: oklch(0.3 0.045 253);
+  --secondary-foreground: oklch(0.93 0.015 220);
+  --muted: oklch(0.28 0.04 253);
+  --muted-foreground: oklch(0.72 0.03 225);
+  --accent: oklch(0.32 0.05 250);
+  --accent-foreground: oklch(0.95 0.012 230);
+
+  --emergency: oklch(0.63 0.23 22);
+  --destructive: oklch(0.63 0.23 22);
+  --destructive-foreground: oklch(0.97 0.01 230);
+  --warning: oklch(0.82 0.16 78);
+  --success: oklch(0.78 0.16 158);
+
+  --border: oklch(0.82 0.14 199 / 16%);
+  --input: oklch(0.82 0.14 199 / 22%);
+  --ring: oklch(0.82 0.14 199 / 55%);
+  --grid: oklch(0.82 0.14 199 / 8%);
+
+  --shadow-panel: 0 1px 0 0 oklch(0.82 0.14 199 / 10%) inset, 0 18px 40px -22px oklch(0.1 0.03 250 / 90%);
+  --glow-cyan: 0 0 0 1px oklch(0.82 0.14 199 / 30%), 0 0 22px -6px oklch(0.82 0.14 199 / 45%);
+  --glow-emergency: 0 0 0 1px oklch(0.63 0.23 22 / 40%), 0 0 24px -6px oklch(0.63 0.23 22 / 55%);
+  --gradient-deep: radial-gradient(
+      120% 90% at 50% -10%,
+      oklch(0.28 0.06 245 / 70%) 0%,
+      transparent 60%
+    ),
+    linear-gradient(180deg, oklch(0.19 0.038 251) 0%, oklch(0.15 0.032 250) 100%);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-abyss);
+    background-image: var(--gradient-deep);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: oklch(0.82 0.14 199 / 30%);
+  }
+}
+
+@utility glass {
+  background: var(--panel);
+  backdrop-filter: blur(14px) saturate(130%);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-panel);
+}
+
+@utility panel-label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-cyan);
+}
+
+@utility data-key {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+}
+
+@utility data-value {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Large-screen readability: slightly bump text sizes so the UI
+   doesn't appear microscopic at 100% zoom on 1440p/4K displays. */
+@media (min-width: 1600px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 2000px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@utility grid-backdrop {
+  background-image:
+    linear-gradient(to right, var(--color-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-grid) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+@utility scan-sheen {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent, oklch(0.82 0.14 199 / 10%), transparent);
+    height: 40%;
+    animation: msar-scan 6s linear infinite;
+    pointer-events: none;
+  }
+}
+
+@keyframes msar-scan {
+  0% {
+    transform: translateY(-120%);
+  }
+  100% {
+    transform: translateY(320%);
+  }
+}
+
+@keyframes msar-pulse-ring {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@keyframes msar-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@utility blink {
+  animation: msar-blink 1.6s ease-in-out infinite;
+}
+
+@utility sweep {
+  transform-origin: center;
+  animation: msar-sweep 7s linear infinite;
+}
+
+@keyframes msar-sweep {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---- MapLibre marker styling ---- */
+.msar-marker {
+  position: relative;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-family: var(--font-mono);
+}
+.msar-glyph {
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 0.25rem;
+  border: 1px solid;
+  font-size: 0.75rem;
+  line-height: 1;
+  background: oklch(0.16 0.03 250 / 90%);
+}
+.msar-glyph-lastknown {
+  border-color: var(--color-emergency);
+  color: var(--color-emergency);
+  background: oklch(0.2 0.08 22 / 90%);
+  box-shadow: 0 0 16px oklch(0.63 0.23 22 / 70%);
+}
+.msar-glyph-predicted {
+  border-color: var(--color-cyan);
+  color: var(--color-cyan);
+  background: oklch(0.2 0.08 199 / 90%);
+  box-shadow: 0 0 18px oklch(0.82 0.14 199 / 80%);
+}
+.msar-glyph-boat {
+  border-color: var(--color-cyan);
+  color: var(--color-cyan);
+  background: oklch(0.18 0.04 200 / 85%);
+}
+.msar-glyph-heli {
+  border-color: var(--color-warning);
+  color: var(--color-warning);
+  border-radius: 999px;
+  background: oklch(0.2 0.06 75 / 85%);
+}
+.msar-glyph-cyclone {
+  border-color: var(--color-warning);
+  color: var(--color-warning);
+  border-radius: 999px;
+  background: oklch(0.22 0.08 75 / 90%);
+  box-shadow: 0 0 20px oklch(0.82 0.16 78 / 80%);
+}
+.msar-asset-selected {
+  outline: 2px solid var(--color-cyan);
+  box-shadow: 0 0 0 4px oklch(0.82 0.14 199 / 35%), 0 0 24px oklch(0.82 0.14 199 / 60%);
+  border-radius: 0.375rem;
+}
+.msar-tag {
+  position: absolute;
+  top: 1.85rem;
+  white-space: nowrap;
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  font-family: var(--font-mono);
+  color: var(--color-muted-foreground);
+  background: oklch(0.15 0.03 250 / 80%);
+  padding: 1px 4px;
+  border-radius: 2px;
+  border: 1px solid var(--color-border);
+}
+.msar-tag-emergency {
+  color: var(--color-emergency);
+  border-color: oklch(0.63 0.23 22 / 40%);
+}
+.msar-tag-cyan {
+  color: var(--color-cyan);
+  border-color: oklch(0.82 0.14 199 / 40%);
+}
+.msar-tag-warning {
+  color: var(--color-warning);
+  border-color: oklch(0.82 0.16 78 / 40%);
+  font-weight: 600;
+}
+.msar-pulse {
+  position: absolute;
+  width: 2.85rem;
+  height: 2.85rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-emergency);
+  animation: msar-pulse-ring 2.2s ease-out infinite;
+  pointer-events: none;
+}
+.msar-pulse-cyan {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-cyan);
+  animation: msar-pulse-ring 2.4s ease-out infinite;
+  pointer-events: none;
+}
+.msar-cyclone-ring {
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 999px;
+  border: 1.5px dashed var(--color-warning);
+  animation: msar-pulse-ring 3.2s ease-out infinite;
+  pointer-events: none;
+}
+.msar-popup {
+  display: grid;
+  gap: 0.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  color: var(--color-foreground);
+}
+.maplibregl-popup-content {
+  background: oklch(0.15 0.035 250 / 95%) !important;
+  border: 1px solid var(--color-border);
+  border-radius: 0.375rem;
+  padding: 0.55rem 0.75rem;
+  backdrop-filter: blur(8px);
+}
+.maplibregl-popup-tip {
+  display: none;
+}
+.maplibregl-ctrl-attrib,
+.maplibregl-ctrl-group {
+  background: oklch(0.16 0.03 250 / 85%) !important;
+  color: var(--color-muted-foreground) !important;
+}
+.maplibregl-ctrl-attrib a {
+  color: var(--color-muted-foreground) !important;
+}
+
+/* ---- Map Legend ---- */
+.msar-legend {
+  position: absolute;
+  bottom: 2.2rem;
+  right: 0.5rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 6px 10px;
+  border-radius: 0.375rem;
+  border: 1px solid var(--color-border);
+  background: oklch(0.13 0.03 250 / 90%);
+  backdrop-filter: blur(8px);
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.08em;
+  color: var(--color-muted-foreground);
+  pointer-events: none;
+}
+.msar-legend-title {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-cyan);
+  margin-bottom: 2px;
+}
+.msar-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.msar-legend-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+
+/* ---- Route Animated Dot ---- */
+.msar-route-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #22d3ee;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 12px #22d3ee, 0 0 24px rgba(34, 211, 238, 0.4);
+  pointer-events: none;
+}
+
+/* ---- Dash march animation for drift line (applied via JS className if needed) ---- */
+@keyframes msar-dash-march {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+/* ---- Failure Comparison Panel animation ---- */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- Asset failure pulse (used on failed map marker) ---- */
+@keyframes failurePulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+  }
+}
+.msar-failed-asset-pulse {
+  animation: failurePulse 1.4s ease-in-out infinite;
+}

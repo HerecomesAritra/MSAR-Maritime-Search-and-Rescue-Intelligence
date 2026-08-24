@@ -1,0 +1,46 @@
+[
+  {
+    "id": "BOAT-01",
+    "name": "Rescue Boat 01",
+    "type": "Rescue Boat",
+    "latitude": 12.96,
+    "longitude": 80.42,
+    "speedKnots": 25,
+    "enduranceHours": 5,
+    "medicalCapability": false,
+    "available": true
+  },
+  {
+    "id": "BOAT-02",
+    "name": "Rescue Boat 02",
+    "type": "Rescue Boat",
+    "latitude": 13.12,
+    "longitude": 80.60,
+    "speedKnots": 22,
+    "enduranceHours": 8,
+    "medicalCapability": true,
+    "available": true
+  },
+  {
+    "id": "HELI-01",
+    "name": "Rescue Helicopter 01",
+    "type": "Helicopter",
+    "latitude": 13.10,
+    "longitude": 80.48,
+    "speedKnots": 120,
+    "enduranceHours": 2,
+    "medicalCapability": true,
+    "available": true
+  },
+  {
+    "id": "HELI-02",
+    "name": "Rescue Helicopter 02",
+    "type": "Helicopter",
+    "latitude": 12.85,
+    "longitude": 80.35,
+    "speedKnots": 130,
+    "enduranceHours": 3,
+    "medicalCapability": true,
+    "available": true
+  }
+]

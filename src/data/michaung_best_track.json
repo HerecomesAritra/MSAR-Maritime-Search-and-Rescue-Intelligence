@@ -1,0 +1,355 @@
+{
+  "dataset_name": "Cyclone Michaung Best Track",
+  "event": "Severe Cyclonic Storm MICHAUNG",
+  "period": "2023-12-01 to 2023-12-06",
+  "source": "India Meteorological Department (IMD), RSMC New Delhi",
+  "source_document": "Severe Cyclonic Storm MICHAUNG over the Bay of Bengal (1st-6th December, 2023): A Report",
+  "notes": [
+    "Coordinates and intensity values are from IMD Table 1 (Best track positions and other parameters).",
+    "wind_kt is estimated maximum sustained surface wind in knots.",
+    "The 2023-12-05 09:00 UTC row corresponds to the post-landfall best-track position near Bapatla.",
+    "The IMD table records 2023-12-06 03:00 UTC as a well marked low pressure area without a numeric track position, so that row is omitted."
+  ],
+  "track": [
+    {
+      "timestamp": "2023-12-01T00:00:00Z",
+      "latitude": 9.1,
+      "longitude": 86.4,
+      "current_intensity": 1.5,
+      "pressure_hpa": 1002,
+      "wind_kt": 20,
+      "pressure_drop_hpa": 3,
+      "category": "D"
+    },
+    {
+      "timestamp": "2023-12-01T03:00:00Z",
+      "latitude": 9.3,
+      "longitude": 86.2,
+      "current_intensity": 1.5,
+      "pressure_hpa": 1002,
+      "wind_kt": 20,
+      "pressure_drop_hpa": 3,
+      "category": "D"
+    },
+    {
+      "timestamp": "2023-12-01T06:00:00Z",
+      "latitude": 9.5,
+      "longitude": 86.0,
+      "current_intensity": 1.5,
+      "pressure_hpa": 1002,
+      "wind_kt": 25,
+      "pressure_drop_hpa": 3,
+      "category": "D"
+    },
+    {
+      "timestamp": "2023-12-01T12:00:00Z",
+      "latitude": 10.0,
+      "longitude": 85.7,
+      "current_intensity": 1.5,
+      "pressure_hpa": 1001,
+      "wind_kt": 25,
+      "pressure_drop_hpa": 3,
+      "category": "D"
+    },
+    {
+      "timestamp": "2023-12-01T18:00:00Z",
+      "latitude": 10.3,
+      "longitude": 85.1,
+      "current_intensity": 1.5,
+      "pressure_hpa": 1000,
+      "wind_kt": 25,
+      "pressure_drop_hpa": 4,
+      "category": "D"
+    },
+    {
+      "timestamp": "2023-12-02T00:00:00Z",
+      "latitude": 10.5,
+      "longitude": 84.1,
+      "current_intensity": 2.0,
+      "pressure_hpa": 998,
+      "wind_kt": 30,
+      "pressure_drop_hpa": 5,
+      "category": "DD"
+    },
+    {
+      "timestamp": "2023-12-02T03:00:00Z",
+      "latitude": 10.6,
+      "longitude": 83.6,
+      "current_intensity": 2.0,
+      "pressure_hpa": 997,
+      "wind_kt": 30,
+      "pressure_drop_hpa": 5,
+      "category": "DD"
+    },
+    {
+      "timestamp": "2023-12-02T06:00:00Z",
+      "latitude": 10.7,
+      "longitude": 83.2,
+      "current_intensity": 2.0,
+      "pressure_hpa": 997,
+      "wind_kt": 30,
+      "pressure_drop_hpa": 5,
+      "category": "DD"
+    },
+    {
+      "timestamp": "2023-12-02T12:00:00Z",
+      "latitude": 10.9,
+      "longitude": 83.1,
+      "current_intensity": 2.0,
+      "pressure_hpa": 997,
+      "wind_kt": 30,
+      "pressure_drop_hpa": 5,
+      "category": "DD"
+    },
+    {
+      "timestamp": "2023-12-02T18:00:00Z",
+      "latitude": 11.1,
+      "longitude": 82.7,
+      "current_intensity": 2.0,
+      "pressure_hpa": 996,
+      "wind_kt": 30,
+      "pressure_drop_hpa": 6,
+      "category": "DD"
+    },
+    {
+      "timestamp": "2023-12-03T00:00:00Z",
+      "latitude": 11.4,
+      "longitude": 82.5,
+      "current_intensity": 2.5,
+      "pressure_hpa": 995,
+      "wind_kt": 35,
+      "pressure_drop_hpa": 7,
+      "category": "CS"
+    },
+    {
+      "timestamp": "2023-12-03T03:00:00Z",
+      "latitude": 11.5,
+      "longitude": 82.4,
+      "current_intensity": 2.5,
+      "pressure_hpa": 995,
+      "wind_kt": 35,
+      "pressure_drop_hpa": 7,
+      "category": "CS"
+    },
+    {
+      "timestamp": "2023-12-03T06:00:00Z",
+      "latitude": 11.8,
+      "longitude": 82.2,
+      "current_intensity": 2.5,
+      "pressure_hpa": 995,
+      "wind_kt": 35,
+      "pressure_drop_hpa": 7,
+      "category": "CS"
+    },
+    {
+      "timestamp": "2023-12-03T09:00:00Z",
+      "latitude": 12.0,
+      "longitude": 82.1,
+      "current_intensity": 2.5,
+      "pressure_hpa": 995,
+      "wind_kt": 35,
+      "pressure_drop_hpa": 7,
+      "category": "CS"
+    },
+    {
+      "timestamp": "2023-12-03T12:00:00Z",
+      "latitude": 12.2,
+      "longitude": 82.0,
+      "current_intensity": 2.5,
+      "pressure_hpa": 995,
+      "wind_kt": 35,
+      "pressure_drop_hpa": 7,
+      "category": "CS"
+    },
+    {
+      "timestamp": "2023-12-03T15:00:00Z",
+      "latitude": 12.4,
+      "longitude": 81.9,
+      "current_intensity": 2.5,
+      "pressure_hpa": 994,
+      "wind_kt": 40,
+      "pressure_drop_hpa": 8,
+      "category": "CS"
+    },
+    {
+      "timestamp": "2023-12-03T18:00:00Z",
+      "latitude": 12.8,
+      "longitude": 81.6,
+      "current_intensity": 3.0,
+      "pressure_hpa": 992,
+      "wind_kt": 45,
+      "pressure_drop_hpa": 10,
+      "category": "CS"
+    },
+    {
+      "timestamp": "2023-12-03T21:00:00Z",
+      "latitude": 13.0,
+      "longitude": 81.4,
+      "current_intensity": 3.0,
+      "pressure_hpa": 992,
+      "wind_kt": 45,
+      "pressure_drop_hpa": 10,
+      "category": "CS"
+    },
+    {
+      "timestamp": "2023-12-04T00:00:00Z",
+      "latitude": 13.1,
+      "longitude": 81.2,
+      "current_intensity": 3.0,
+      "pressure_hpa": 992,
+      "wind_kt": 45,
+      "pressure_drop_hpa": 10,
+      "category": "CS"
+    },
+    {
+      "timestamp": "2023-12-04T03:00:00Z",
+      "latitude": 13.3,
+      "longitude": 81.0,
+      "current_intensity": 3.0,
+      "pressure_hpa": 988,
+      "wind_kt": 50,
+      "pressure_drop_hpa": 14,
+      "category": "SCS"
+    },
+    {
+      "timestamp": "2023-12-04T06:00:00Z",
+      "latitude": 13.5,
+      "longitude": 80.8,
+      "current_intensity": 3.0,
+      "pressure_hpa": 988,
+      "wind_kt": 50,
+      "pressure_drop_hpa": 14,
+      "category": "SCS"
+    },
+    {
+      "timestamp": "2023-12-04T09:00:00Z",
+      "latitude": 13.7,
+      "longitude": 80.7,
+      "current_intensity": 3.0,
+      "pressure_hpa": 988,
+      "wind_kt": 50,
+      "pressure_drop_hpa": 14,
+      "category": "SCS"
+    },
+    {
+      "timestamp": "2023-12-04T12:00:00Z",
+      "latitude": 14.0,
+      "longitude": 80.5,
+      "current_intensity": 3.5,
+      "pressure_hpa": 986,
+      "wind_kt": 55,
+      "pressure_drop_hpa": 16,
+      "category": "SCS"
+    },
+    {
+      "timestamp": "2023-12-04T15:00:00Z",
+      "latitude": 14.3,
+      "longitude": 80.4,
+      "current_intensity": 3.5,
+      "pressure_hpa": 986,
+      "wind_kt": 55,
+      "pressure_drop_hpa": 16,
+      "category": "SCS"
+    },
+    {
+      "timestamp": "2023-12-04T18:00:00Z",
+      "latitude": 14.5,
+      "longitude": 80.3,
+      "current_intensity": 3.5,
+      "pressure_hpa": 988,
+      "wind_kt": 50,
+      "pressure_drop_hpa": 14,
+      "category": "SCS"
+    },
+    {
+      "timestamp": "2023-12-04T21:00:00Z",
+      "latitude": 14.7,
+      "longitude": 80.2,
+      "current_intensity": 3.5,
+      "pressure_hpa": 988,
+      "wind_kt": 50,
+      "pressure_drop_hpa": 14,
+      "category": "SCS"
+    },
+    {
+      "timestamp": "2023-12-05T00:00:00Z",
+      "latitude": 14.9,
+      "longitude": 80.2,
+      "current_intensity": 3.5,
+      "pressure_hpa": 988,
+      "wind_kt": 50,
+      "pressure_drop_hpa": 14,
+      "category": "SCS"
+    },
+    {
+      "timestamp": "2023-12-05T03:00:00Z",
+      "latitude": 15.2,
+      "longitude": 80.2,
+      "current_intensity": 3.5,
+      "pressure_hpa": 988,
+      "wind_kt": 50,
+      "pressure_drop_hpa": 14,
+      "category": "SCS"
+    },
+    {
+      "timestamp": "2023-12-05T06:00:00Z",
+      "latitude": 15.5,
+      "longitude": 80.3,
+      "current_intensity": 3.0,
+      "pressure_hpa": 988,
+      "wind_kt": 50,
+      "pressure_drop_hpa": 14,
+      "category": "SCS"
+    },
+    {
+      "timestamp": "2023-12-05T09:00:00Z",
+      "latitude": 15.8,
+      "longitude": 80.3,
+      "current_intensity": null,
+      "pressure_hpa": 990,
+      "wind_kt": 50,
+      "pressure_drop_hpa": 12,
+      "category": "SCS"
+    },
+    {
+      "timestamp": "2023-12-05T12:00:00Z",
+      "latitude": 16.0,
+      "longitude": 80.3,
+      "current_intensity": null,
+      "pressure_hpa": 996,
+      "wind_kt": 40,
+      "pressure_drop_hpa": 8,
+      "category": "CS"
+    },
+    {
+      "timestamp": "2023-12-05T15:00:00Z",
+      "latitude": 16.4,
+      "longitude": 80.4,
+      "current_intensity": null,
+      "pressure_hpa": 998,
+      "wind_kt": 35,
+      "pressure_drop_hpa": 7,
+      "category": "CS"
+    },
+    {
+      "timestamp": "2023-12-05T18:00:00Z",
+      "latitude": 16.8,
+      "longitude": 80.4,
+      "current_intensity": null,
+      "pressure_hpa": 1000,
+      "wind_kt": 30,
+      "pressure_drop_hpa": 6,
+      "category": "DD"
+    },
+    {
+      "timestamp": "2023-12-06T00:00:00Z",
+      "latitude": 17.4,
+      "longitude": 80.5,
+      "current_intensity": null,
+      "pressure_hpa": 1004,
+      "wind_kt": 20,
+      "pressure_drop_hpa": 3,
+      "category": "D"
+    }
+  ]
+}

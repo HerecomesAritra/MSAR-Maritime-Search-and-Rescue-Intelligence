@@ -1,0 +1,16 @@
+[
+  {
+    "id": "MV-204",
+    "name": "Demo Fishing Vessel",
+    "type": "Fishing Vessel",
+    "latitude": 13.04,
+    "longitude": 80.52,
+    "speedKnots": 7,
+    "headingDegrees": 140,
+    "crewAtRisk": 3,
+    "minutesSinceContact": 20,
+    "urgency": 4,
+    "status": "LOSS_OF_CONTACT",
+    "dataType": "SIMULATED"
+  }
+]
